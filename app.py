@@ -1,9 +1,9 @@
 import streamlit as st
 from dotenv import load_dotenv
-from ragbot import get_chatbot_response 
+from components.ragbot import get_chatbot_response 
 from langchain_core.messages import HumanMessage
 from langchain.embeddings import HuggingFaceEmbeddings
-from wordembedding import create_vectordb
+from components.wordembedding import create_vectordb
 
 load_dotenv()
 
